@@ -11,10 +11,10 @@
 
     <title>Media Penyimpan e-Book</title>
   </head>
-  <body>
+  <body class="mt-5">
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <div class="navbar-header">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,8 +52,8 @@
     <!-- about -->
     <section class="about" id="about">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
+        <div class="row pt-4 mb-4">
+          <div class="col">
             <h2 class="text-center">About</h2>
             <hr>
           </div>
@@ -74,88 +74,100 @@
     <!-- portfolio -->
     <section class="portfolio" id="portfolio">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center">
+        <div class="row pt-4 mb-4">
+          <div class="col text-center">
             <h2>Portfolio</h2>
             <hr>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-sm-4">
-            <a href="" class="thumbnail">
-              <img src="img/portfolio/1.png">
-            </a>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="img/portfolio/1.png" alt="Card image cap">
           </div>
-          <div class="col-sm-4">
-            <a href="" class="thumbnail">
-              <img src="img/portfolio/2.png">
-            </a>
+        </div>
+        <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="img/portfolio/2.png" img-width="200" alt="Card image cap">
           </div>
-          <div class="col-sm-4">
-            <a href="" class="thumbnail">
-              <img src="img/portfolio/3.png">
-            </a>
+        </div>
+        <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="img/portfolio/3.png" alt="Card image cap">
           </div>
-          <div class="col-sm-4">
-            <a href="" class="thumbnail">
-              <img src="img/portfolio/4.png">
-            </a>
+        </div>
+        <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="img/portfolio/4.png" alt="Card image cap">
           </div>
-          <div class="col-sm-4">
-            <a href="" class="thumbnail">
-              <img src="img/portfolio/5.png">
-            </a>
+        </div>
+        <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="img/portfolio/5.png" alt="Card image cap">
           </div>
-          <div class="col-sm-4">
-            <a href="" class="thumbnail">
-              <img src="img/portfolio/6.png">
-            </a>
-          </div> 
+        </div>
+        <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="img/portfolio/6.png" alt="Card image cap">
+          </div>
         </div>
       </div>
     </section>
     <!-- end portfolio -->
 
     <!-- contact -->
-    <section class="contact" id="contact">
-      <div class="container">
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <h2>Contact</h2>
-          <hr>
+    <section id="contact" class="contact">
+    <div class="container">
+      <div class="row pt-4 mb-4">
+        <div class="col text-center">
+          <h2>Contact Us</h2>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
+      <div class="row justify-content-center">
+        <div class="col-lg-4">
+          <div class="card text-white bg-primary mb-3 text-center">
+            <div class="card-body">
+              <h5 class="card-title">Contact Us</h5>
+              <p class="card-text">You are the light of the world</p>
+            </div>
+          </div>
+
+          <ul class="list-group">
+            <li class="list-group-item"><h1>Location</h1></li>
+            <li class="list-group-item">My Office</li>
+            <li class="list-group-item">Jl. Widas N-10, Malang</li>
+            <li class="list-group-item">East Java, Indonesia</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-6">
           <form>
             <div class="form-group">
               <label for="nama">Nama</label>
-              <input type="text" id="nama" class="form-control" placeholder="Masukkan nama">
+              <input type="text" class="form-control" id="nama">
             </div>
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="text" id="email" class="form-control" placeholder="Masukkan email">
+              <input type="text" class="form-control" id="email">
             </div>
-             <div class="form-group">
-              <label for="telp">No Telepon</label>
-              <input type="tel" id="telp" class="form-control" placeholder="Masukkan No Telepon">
+            <div class="form-group">
+              <label for="telp">No Telp</label>
+              <input type="text" class="form-control" id="telp">
             </div>
-            <select class="form-control">
-              <option><-- Pilih Kategori --></option>
-              <option>e-Book Umum</option>
-              <option>e-Book Panduan</option>
-            </select>
             <div class="form-group">
               <label for="pesan">Pesan</label>
-              <textarea class="form-control" rows="5" placeholder="Masukkan pesan"></textarea>
+              <textarea name="pesan" id="pesan" class="form-control"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Kirim pesan</button>
+            <div class="form-group">
+              <button type="button" class="btn btn-primary">Kirim Pesan</button>
+            </div>
           </form>
         </div>
       </div>
-    </div>
+
+    </div> 
     </section>
     <!-- end contact -->
 
